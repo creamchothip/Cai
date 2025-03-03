@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* พื้นหลัง */
+        body {
+            background-image: url("../../picture_all/วอลอวกาศ.png");
+    		background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+
+/* กล่องข้อความหลัก */
+.lesson-box1_5 {
+    background-color: white;
+    width: 80%;
+    max-width: 1000px;
+    min-height: 370px;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.8;
+	text-align: left;
+}
+
+/* ปรับขนาดตัวอักษรใน lesson-box1_5 */
+.lesson-box1_5 p {
+    color: black;
+    font-size: 22px;
+	text-align: left;
+}
+
+.lesson-box1_5 strong {
+    color: black;
+    font-size: 20px;
+	text-align: left;
+}
+
+
+/* รูปภาพ */
+.image1_extest1_5 {
+    position: fixed;
+    right: 100px;
+    top: 550px;
+    width: 450px;
+    height: auto;
+	display: flex;
+  	justify-content: center;  /* แนวนอน */
+  	align-items: center;      /* แนวตั้ง */
+	 transform: scaleX(-1);
+}
+.image2_extest1_5 {
+    position: fixed;
+    right: 200px;
+    top: 20px;
+    width: 280px;
+    height: auto;
+}
+.image3_extest1_5 {
+    position: fixed;
+    right: 280px;
+    top: 250px;
+    width: 250px;
+    height: auto;
+	align-items: center;
+}
+
+
+/* กล่องจับเวลา */
+#timer-box1_5 {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+	.text_study1_5 {
+    position: relative;
+    top:10px;
+	font-size: 25px;
+	background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 650px; /* ลดความกว้างลง */
+    max-width: 90%; /* ปรับขนาดอัตโนมัติตามหน้าจอ */
+    text-align: center;
+    margin-top: -70px;
+}

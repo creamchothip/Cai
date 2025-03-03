@@ -1,0 +1,106 @@
+/* พื้นหลัง */
+body {
+    background-color: #BFCED6;  /* ใช้สีฟ้าเดิม */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+.lesson1_3 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: white !important;  /* ใช้สีขาวเป็นพื้นหลัง และใช้ !important เพื่อให้แน่ใจ */
+    padding: 20px;
+    border-radius: 30px;  /* ทำให้มุมของกล่องมน */
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* เพิ่มเงา */
+    transition: transform 0.3s ease-in-out;  /* เพิ่มการเคลื่อนไหวเมื่อ hover */
+}
+
+/* เพิ่มไอคอนก่อนข้อความ */
+.lesson1_3 h1 {
+    font-size: 25px;
+}
+
+/* เมื่อ hover กล่องข้อความ */
+.lesson1_3:hover {
+    background-color: #f9f9f9;  /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: scale(1.05);  /* ขยายขนาดเล็กน้อย */
+    transition: all 0.3s ease-in-out;  /* เพิ่มเอฟเฟกต์การเคลื่อนไหว */
+}
+
+
+/* สไตล์กล่องข้อความที่รับข้อมูล */
+.drop-zone-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.drop-zone {
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #f4a3c7;  /* เส้นขอบชมพูอ่อน */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    overflow-y: auto;
+    background-color: white;  /* พื้นหลังสีชมพูพาสเทล */
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    resize: none;
+    background-color: #6BA08A;  /* พื้นหลังอ่อน */
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* กล่องข้อความที่สามารถลากได้ */
+.drag-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* สไตล์กล่องข้อความที่สามารถลากได้ */
+.draggable {
+    width: 300px;
+    height: 70px;
+    background-color: #4CAF50;  /* สีเขียวก่อนกด */
+    color: black;  /* ฟอนต์สีดำ */
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* เงาอ่อน ๆ ให้กล่องดูนุ่มนวล */
+}
+
+.draggable:hover {
+    background-color: #FDDF8E;  /* สีเหลืองอ่อนเมื่อ hover */
+    color: black;  /* ฟอนต์สีดำเมื่อ hover */
+    transform: scale(1.05);  /* ขยายขนาดเล็กน้อยเมื่อ hover */
+    transition: all 0.3s ease;
+}
+
+.draggable:active {
+    background-color: #F7A59C;  /* สีชมพูส้มอ่อนขึ้นเมื่อกด */
+    transform: scale(0.98);  /* ย่อขนาดเล็กลงขณะกด */
+}
+
+

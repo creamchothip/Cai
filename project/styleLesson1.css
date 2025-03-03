@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #BFCED6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.lesson-box {
+    background-color: #2A505A;
+    width: 80%; /* ปรับความกว้างเป็น 80% ของหน้าจอ */
+    max-width: 500px; /* กำหนดความกว้างสูงสุด */
+    height: auto; /* ให้ความสูงปรับตามเนื้อหา */
+    padding: 30px; /* เพิ่มขนาดขอบเขตภายใน */
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-size: 25px; /* ขยายตัวอักษร */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -50px;
+        }
+        .nav-button {
+            margin-top: 150px;
+            padding: 10px 20px;
+            background-color: #EB4343;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+			text-decoration: none; /* ลบเส้นใต้ */
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+			
+        }
+/* ปุ่มเปิด/ปิดเสียง */
+.audio-control {
+    position: fixed;
+    bottom: 80px; /* ปรับให้อยู่ต่ำกว่าปุ่มไอคอนเสียง */
+    left: 20px;
+    font-size: 18px;
+	margin-top: 20px;
+}
+.audio-control button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #6BA08A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.audio-control button:hover {
+    background-color: #FFD10A; /* สีเหลืองอ่อน */
+}
+.image4 {
+    position: fixed;
+    right: 20px;
+    top: 300px;
+    width: 500px;
+    height: auto;
+}
+.image5 {
+    position: fixed;
+    left: 385px;
+    top: 80px;
+    width: 200px;
+    height: auto;
+}

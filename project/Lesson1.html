@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1</title>
+	<link rel="stylesheet" href="styleLesson1.css"> <!-- เชื่อมกับไฟล์ CSS -->
+</head>
+<body>
+    <div class="lesson-box">เรื่องที่ 1 <br> เช็กก่อนแชร์!</div>
+    <button class="nav-button" onclick="startLesson()">
+        👉🏻 เข้าสู่บทเรียน
+    </button>
+	<script>
+function startLesson() {
+    window.location.href = "EXPre Lesson1.html"; // เปลี่ยนไปยังหน้า "exam.html"
+}
+</script>
+<!-- วิดีโอพื้นหลัง -->
+<iframe id="bg-music" width="0" height="0" 
+        src="https://www.youtube.com/embed/X7ng5cd89-A?autoplay=1&loop=1&playlist=X7ng5cd89-A"
+        frameborder="0" allow="autoplay"></iframe>
+
+<div class="audio-control">
+    <button id="mute-button" onclick="toggleMute()">🔊 เปิดเสียง</button>
+</div>
+<img src="../picture_all/หุ่นยนต์ผายมือ.png" alt="รูปภาพ" class="image4">
+<img src="../picture_all/แชร์โพสต์.png" alt="รูปภาพ" class="image5">
+<script>
+    let isMuted = false;
+    
+    function toggleMute() {
+        const iframe = document.getElementById('bg-music');
+        const muteButton = document.getElementById('mute-button');
+        
+        isMuted = !isMuted;
+        if (isMuted) {
+            iframe.src = iframe.src.replace('autoplay=1', 'autoplay=1&mute=1');
+            muteButton.innerHTML = '🔇 ปิดเสียง';
+        } else {
+            iframe.src = iframe.src.replace('autoplay=1&mute=1', 'autoplay=1');
+            muteButton.innerHTML = '🔊 เปิดเสียง';
+        }
+    }
+</script>
+</body>
+</html>

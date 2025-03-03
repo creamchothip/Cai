@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* พื้นหลัง */
+
+/* กล่องข้อความหลัก */
+.lesson-box1_8 {
+    background-color: white;
+    max-width: 900px;
+    min-height: 370px;
+	width: 1000px;
+	height: 370px;
+	height: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ปรับขนาดตัวอักษรใน lesson-box1_8 */
+.lesson-box1_8 p {
+    color: black;
+    font-size: 23px;
+    text-align: left;
+}
+
+.lesson-box1_8 strong {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* ปุ่มต่อไป */
+.buttoninput_extest1 {
+    margin: 380px auto 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 10px 20px;
+    background-color: #EB4343;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* แก้ align-itms เป็น align-items */
+    gap: 10px;
+    position: relative;
+    top: 100px;
+    justify-content: center; /* จัดเนื้อหาในปุ่มให้อยู่ตรงกลาง */
+    width: fit-content; /* ปรับขนาดตามเนื้อหา */
+    text-decoration: none; /* ลบเส้นใต้ */
+}
+
+.buttoninput_extest1:hover {
+    background-color: #C72E2E;
+}
+
+/* รูปภาพ */
+.image1_Lesson1_8{
+    position: fixed;
+    right: 360px;
+    top:375px;
+    width: 300px;
+    height: auto;
+}
+.image3{
+	left: 20px;
+    top: 10px;
+    width: 280px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    border: none;
+
+	
+}
+
+
+
+/* กล่องจับเวลา */
+#timer-box1_8 {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+

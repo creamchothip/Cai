@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #BFCED6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.lesson-box1_4 {
+    background-color: white; /* พื้นหลังสีขาว */
+    width: 80%; /* กว้าง 80% ของหน้าจอ */
+    max-width: 1000px; /* จำกัดความกว้างสูงสุด */
+	min-height: 300px; /* กำหนดความสูงขั้นต่ำให้กล่องยาวขึ้น */
+    height: auto; /* ปรับความสูงตามเนื้อหา */
+    padding: 30px; /* ระยะขอบภายใน */
+    border-radius: 15px; /* ขอบโค้ง */
+    text-align: center; /* จัดตัวอักษรตรงกลาง */
+    color: black; /* ตัวอักษรสีดำ */
+    font-size: 30px; /* ขนาดตัวอักษร */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* จัดวางให้อยู่ตรงกลางของหน้าจอ */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.buttoninput_extest1 {
+    margin: 380px auto 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 10px 20px;
+    background-color: #EB4343;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* แก้ align-itms เป็น align-items */
+    gap: 10px;
+    position: relative;
+    top: 10px;
+    justify-content: center; /* จัดเนื้อหาในปุ่มให้อยู่ตรงกลาง */
+    width: fit-content; /* ปรับขนาดตามเนื้อหา */
+	text-decoration: none; /* ลบเส้นใต้ */
+        }
+.button-link {
+    text-decoration: none; /* ลบเส้นใต้ */
+    display: inline-block; /* ให้แสดงเป็นบล็อกเหมือนปุ่ม */
+}
+.nav-button:hover {
+    background-color: #0056b3;
+}
+.image1_extest1_4 {
+    position: fixed;
+    right: 20px;
+    top: 350px;
+    width: 500px;
+    height: auto;
+}
+.speak-button1_4 {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: #FF9800; /* สีส้ม */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.speak-button1_4:hover {
+    background-color: #E68900; /* สีเข้มขึ้น */
+    transform: scale(1.05); /* ขยายเล็กน้อย */
+}
+
+.speak-button1_4:active {
+    background-color: #D67C00;
+    transform: scale(0.98); /* กดแล้วหดลงเล็กน้อย */
+}
+/* สไตล์สำหรับกล่องจับเวลา */
+#timer-box1_4 {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }

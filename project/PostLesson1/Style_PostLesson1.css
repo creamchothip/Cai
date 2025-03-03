@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+ิbody{
+	overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+}
+        fieldset {
+            border: 2px solid #FCF695;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+			width: 665px;
+			height: 450px;
+			
+        }
+        legend {
+            font-weight: bold;
+            color: black;
+			font-size : 25px;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+			font-size : 20px;
+        }
+
+.speak-button1_1 {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: #FF9800; /* สีส้ม */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.speak-button1_1:hover {
+    background-color: #E68900; /* สีเข้มขึ้น */
+    transform: scale(1.05); /* ขยายเล็กน้อย */
+}
+
+.speak-button1_1:active {
+    background-color: #D67C00;
+    transform: scale(0.98); /* กดแล้วหดลงเล็กน้อย */
+}
+/* สไตล์สำหรับกล่องจับเวลา */
+#timer-box1_1 {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
