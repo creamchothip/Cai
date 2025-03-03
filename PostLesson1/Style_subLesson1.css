@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+/* ตั้งค่าทั่วไปสำหรับ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+	overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+}
+
+/* การจัดการกับส่วนของข้อความหัวเรื่อง */
+h2 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #666;
+}
+
+/* สไตล์สำหรับแสดงผลข้อมูล */
+p {
+    font-size: 32px;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* สไตล์สำหรับปุ่ม "หน้าแรก" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* การตั้งค่าของตารางคะแนน */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* สไตล์สำหรับผลลัพธ์การทดสอบ */
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+/* สไตล์สำหรับคอนเทนเนอร์ที่บรรจุผลลัพธ์ */
+.result-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.result-box {
+    background-color: #ffffff; /* สีพื้นหลังของกล่อง */
+    border: 2px solid #4CAF50;  /* ขอบกล่องสีเขียว */
+    padding: 20px;
+    border-radius: 20px;        /* ขอบโค้งมน */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* เงาของกล่อง */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+	font-size : 30;
+}
+
+.result-box h2 {
+    color: #4CAF50;  /* สีหัวข้อ */
+}
+
+.result-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+        img {
+            position: fixed; /* ทำให้ภาพคงที่เมื่อเลื่อนหน้าจอ */
+            top: 0; /* อยู่ที่ตำแหน่งบนสุด */
+            right: 0; /* อยู่ที่ตำแหน่งขวาสุด */
+            width: 250px; /* กำหนดขนาดภาพ */
+            height: auto; /* รักษาสัดส่วนของภาพ */
+            border: none; /* ลบขอบของภาพ */
+            background-color: transparent; /* ลบพื้นหลังให้โปร่งใส */
+            z-index: 9999; /* ให้ภาพอยู่ด้านบนสุด */
+        }
