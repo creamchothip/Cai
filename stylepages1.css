@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-image: url('../picture_all/วอลอวกาศ.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+	overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.inputname input {
+    padding: 10px;
+    font-size: 18px;
+    width: 350px;
+	height: 50px;
+    text-align: center;
+    border: 2px solid #555;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-btn button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    color: aliceblue;
+    background-color: #EB4343;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.submit-btn button:hover {
+    background-color: #45a049;
+}
+
+.submit-btn button:active {
+    background-color: #3e8e41;
+}
+
+.welcome-box {
+    position: absolute; /* ใช้ position: absolute เพื่อให้กล่องข้อความลอย */
+    top: 350px; /* ปรับให้กล่องข้อความอยู่เหนือภาพครู */
+    left: 89%; /* จัดให้อยู่กลางหน้าจอ */
+    transform: translateX(-50%); /* ทำให้กล่องอยู่กลางแนวนอน */
+    background-color: #F8C8DC;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid white;
+    width: 300px;
+    z-index: 20; /* ให้อยู่เหนือรูปภาพ */
+}
+
+
+.audio-control {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+}
+
+.audio-control button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #F7D07A;
+    border: 2px solid black; /* เพิ่มขอบกรอบสีดำ */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.audio-control button:hover {
+    background-color: #FFF4C7;
+}
+
+.image1, .image2, .image3 {
+    position: absolute;
+    z-index: -1;
+}
+
+.image1 {
+    right: 20px;
+    top: 450px;
+    width: 450px;
+    height: auto;
+	transform: rotateY(180deg); /* หมุนรูปภาพในแนวนอน */
+}
+
+.image2 {
+    right: 20px;
+    top: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.image3 {
+    left: 20px;
+    top: 10px;
+    width: 280px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    border: none;
+    mix-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .inputname input {
+        width: 80%;
+    }
+
+    .welcome-box {
+        width: 80%;
+    }
+}
