@@ -1,0 +1,80 @@
+
+.text_lesson1_1 {
+    position: relative;
+    top: 65px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+
+.lesson-box1_1 {
+    background-color: white; /* พื้นหลังสีขาว */
+    width: 1200px; /* กำหนดความกว้างที่คงที่ */
+    height: 350px; /* กำหนดความสูงที่คงที่ */
+    padding: 25px; /* ระยะขอบภายใน */
+    border-radius: 15px; /* ขอบโค้ง */
+    text-align: center; /* จัดตัวอักษรตรงกลาง */
+    color: black; /* ตัวอักษรสีดำ */
+    font-size: 25px; /* ขนาดตัวอักษร */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
+    display: flex;
+    justify-content: center; /* จัดตำแหน่งแนวนอน */
+    align-items: center; /* จัดตำแหน่งแนวตั้ง */
+    position: absolute; /* ใช้ absolute เพื่อจัดตำแหน่งบนหน้าจอ */
+    top: 50%; /* กำหนดให้อยู่ที่ 50% ของความสูงหน้าจอ */
+    left: 50%; /* กำหนดให้อยู่ที่ 50% ของความกว้างหน้าจอ */
+    transform: translate(-50%, -50%); /* ย้ายกล่องให้มาอยู่ตรงกลางอย่างสมบูรณ์ */
+}
+
+
+
+.buttoninput_Lesson1_1 {
+    margin: 380px auto 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 10px 20px;
+    background-color: #EB4343;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* แก้ align-itms เป็น align-items */
+    gap: 10px;
+    position: relative;
+    top: 550px;
+	margin-top: 20px;
+    justify-content: center; /* จัดเนื้อหาในปุ่มให้อยู่ตรงกลาง */
+    width: fit-content; /* ปรับขนาดตามเนื้อหา */
+	text-decoration: none; /* ลบเส้นใต้ */
+        }
+.button-link {
+    text-decoration: none; /* ลบเส้นใต้ */
+    display: inline-block; /* ให้แสดงเป็นบล็อกเหมือนปุ่ม */
+}
+.nav-button:hover {
+    background-color: #0056b3;
+}
+.image1_extest1 {
+    position: fixed;
+    right: 20px;
+    top: 350px;
+    width: 500px;
+    height: auto;
+}
+
+/* สไตล์สำหรับกล่องจับเวลา */
+#timer-box1_1 {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+
